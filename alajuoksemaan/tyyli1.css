@@ -1,0 +1,215 @@
+body {background-color:#000000; /* taustaväri pinkki*/
+	  background-repeat:no-repeat; /*taustakuvana */ 
+	  background-size: 80%; /* toinen vaihtoehto 100% */
+	  font-family: verdana, arial, sans-serif; /* fontti*/
+}
+html {height:100%}/* sisältöalue koko sivun korkeudelle */
+
+article {position:relative;}
+
+#header {
+	position:relative;
+}
+
+#logo {width:100%;
+       max-width:130px;
+	   position:absolute;
+	   top:0px;
+	   right:10px;
+	   z-index:1;
+	   }
+	  
+#container {margin:auto;
+			width:100%;
+			max-width:1230px;
+			background-color:#0b486b; /*rgpa väri*/
+			border-radius: 20px; /*kulman pyöristys*/
+			box-shadow: 10px 10px 10px white; /* heittovarjo*/
+			}
+
+			
+article {padding:10px;}	/* tyhjää tilaa sisällön ja reunan väliin*/
+
+article::after {
+		content: "";
+		display: table;
+		clear:both;
+}
+
+article img,
+article p {
+		float: left;
+		display:inline-block;
+		width: 45%;
+		padding-left:10px;
+}
+
+h1 {color:white;
+   font-family:font-family: verdana, arial, sans-serif;
+   font-size:24px; /*fontin koko*/
+   }
+
+   
+p{
+	line-height:2;
+	font-size:16px;
+	color: white;
+} /* riviväli isommaksi*/
+h5{ line-height:2;
+    font-size:22px;
+	color:white;
+}
+h2 {
+	line-height:2;
+	font-size:16px;
+	color: white;
+} /* riviväli isommaksi*/
+h3 {color:white;
+   font-family:font-family: verdana, arial, sans-serif;
+   font-size:24px; /*fontin koko*/
+   }
+   
+
+
+		
+nav {background-color:#FFFFFF;
+}
+nav {display:none;} /* nav-elementti piiloon*/
+select.mobiili {background-color:#FFFFFF;
+				color:black;
+				padding:10px;
+				margin-left:10px
+				}
+select.mobiili option {padding:10px;
+						font-size:18px;
+						}
+
+#juoksemisenaloittaminen article img,
+article p {
+		float: right;
+		display:inline-block;
+		width: 45%;
+		padding-right:10px;
+}
+
+h2::after {
+		content: "";
+		display: table;
+		clear:both;
+		color:white;
+   font-family:font-family: verdana, arial, sans-serif;
+   font-size:24px; /*fontin koko*/
+   }
+	
+
+h2{ float:left;
+color:white;
+font-family:font-family: verdana, arial, sans-serif;
+font-size:24px; /*fontin koko*/
+   }
+   
+h3 {color:white;
+   font-family:font-family: verdana, arial, sans-serif;
+   font-size:16px; /*fontin koko*/
+   }
+ 
+
+
+
+#Muutahuomioitavaa article img,
+article p {
+		float: left;
+		display:inline-block;
+		width: 45%;
+		padding-left:10px;
+} 
+
+h2::after {
+		content: "";
+		display: table;
+		clear:both;
+		color:white;
+   font-family: font-family: verdana, arial, sans-serif;
+   font-size:24px; /*fontin koko*/
+   }
+   
+h2 {color:white;
+   font-family: font-family: verdana, arial, sans-serif;
+   font-size:24px; /*fontin koko*/
+   }
+   
+article h3 {color:white;
+   font-family:font-family: verdana, arial, sans-serif;
+   font-size:16px; /*fontin koko*/
+   }
+
+
+/*taulukon määrityksiä*/
+td {padding:5px;
+	border-style:none;}
+	/* joka toinen rivi on eri taustavärillä*/
+tr:nth-child(even) {background-color:#0b486b;}
+ul, h3 {clear:both;} /*float:n vaikutus loppuu */
+/* tabletti näyttö*/
+@media (max-width:690px){
+table, td {display:block; 
+		width:100%;}
+th {display:none;}
+/* joka toinen rivi on eri taustavärillä*/
+tr:nth-child(even) {background-color:#f2f2f2;}
+}
+@media (min-width:690px){	
+	
+		
+.mobiili {display:none;} /*mobiilinavigointi piiloon */
+nav {background-color:white;
+	padding:10px;
+	text-align:center;
+	display:block; /*nav näkyviin isolla näytöllä*/
+}
+
+
+/*linkin määritykset*/
+nav a {color:white;
+       padding:10px;
+	   text-align:center;
+}
+nav a {color:white;
+       margin:0px 10px; /*marginaalit sivuille*/
+	   display:inline-block; /* ottaa leveyden mukaan*/
+	   width:7em; /*leveys*/
+	   text-decoration:none; /*alleviivaus pois*/
+	   border:1px white solid;
+	   background-color: #0b486b;
+	   padding:10px;
+	   border-radius:10px;
+	   box-shadow:5px 5px 5px white, -5px -5px 5px black;
+}
+/* hiiri linkin päällä*/
+nav a:hover {color:#000000;
+			background-color:white;
+			width:6.5em;
+			height:80%;
+			font-size:80%}
+/* kun ollaan jo sivulla*/
+.sivulla {background-color:#928e8b;}			
+
+  
+
+	h1 {font-size:54px;}
+	.pallot img {width:28%;
+				max-width: 500px;
+				display:inline-block; /*kuvat näkyviin*/}
+}
+
+/*iso näyttö*/
+@media (min-width:990px){
+	h1 {font-size:72px;}
+}
+
+
+
+
+
+
+				
